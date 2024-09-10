@@ -32,6 +32,7 @@ RUN apk add --no-cache \
   php-pdo_mysql \
   php-phar \
   php-session \
+  php-simplexml \
   php-tokenizer \
   php-xml \
   php-xmlreader \
