@@ -11,6 +11,10 @@ RUN apk add --no-cache \
   git \
   nginx \
   gettext-dev \
+  openssh-client \
+  supervisor
+
+RUN apk add --no-cache \
   php \
   php-bcmath \
   php-ctype \
@@ -32,8 +36,7 @@ RUN apk add --no-cache \
   php-xml \
   php-xmlreader \
   php-xmlwriter \
-  php-zip \
-  supervisor
+  php-zip
 
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
