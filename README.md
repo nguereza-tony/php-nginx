@@ -6,7 +6,7 @@ Inspired from `TrafeX/docker-php-nginx`
 
 * Built on the lightweight and secure Alpine Linux distribution
 * Multi-platform, supporting AMD4, ARMv6, ARMv7, ARM64
-* Very small Docker image size (+/-40MB)
+* Very small Docker image size (+/-100MB)
 * Uses PHP 8.0 for the best performance, low CPU usage & memory footprint
 * Optimized for 100 concurrent users
 * Optimized to only use resources when there's traffic (by using PHP-FPM's `on-demand` process manager)
@@ -28,7 +28,7 @@ the best practices and is easy to understand and modify to your needs.
 Start the Docker container:
 
 ```bash
-docker run -p 80:8080 nguereza/php-nginx
+    docker run -p 80:8080 nguereza/php-nginx
 ```
 
 See the PHP info on http://localhost, or the static html page on http://localhost/test.html
