@@ -28,14 +28,14 @@ the best practices and is easy to understand and modify to your needs.
 Start the Docker container:
 
 ```bash
-    docker run -p 80:8080 nguereza/php-nginx
+    docker run -p 80:8000 nguereza/php-nginx
 ```
 
 See the PHP info on http://localhost, or the static html page on http://localhost/test.html
 
 Or mount your own code to be served by PHP-FPM & Nginx
 ```bash
-    docker run -p 80:8080 -v ~/my-codebase:/var/www/html nguereza/php-nginx
+    docker run -p 80:8000 -v ~/my-codebase:/var/www/html nguereza/php-nginx
 ```
 ## Versioning
 Major or minor changes are always published as a [release](https://github.com/nguereza-tony/php-nginx/releases) with correspondending changelogs.
