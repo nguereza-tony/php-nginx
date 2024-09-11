@@ -10,9 +10,8 @@ RUN apk add --no-cache \
   curl \
   git \
   nginx \
-  gettext-dev \
-  openssh-client \
-  supervisor
+  supervisor \
+  openssh-client
 
 RUN apk add --no-cache \
   php \
@@ -65,7 +64,7 @@ USER nobody
 COPY --chown=nobody src/ /var/www/html
 
 # Expose the port nginx is reachable on
-EXPOSE 8080
+EXPOSE 8000
 
 # Let supervisord start nginx & php-fpm
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
